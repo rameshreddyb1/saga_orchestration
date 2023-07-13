@@ -1,8 +1,9 @@
 package com.saga.UserService.projection;
 
-import com.dailycodebuffer.CommonService.model.CardDetails;
-import com.dailycodebuffer.CommonService.model.User;
-import com.dailycodebuffer.CommonService.queries.GetUserPaymentDetailsQuery;
+import com.saga.CommonService.model.CardDetails;
+import com.saga.CommonService.model.User;
+import com.saga.CommonService.queries.GetUserPaymentDetailsQuery;
+
 import org.axonframework.queryhandling.QueryHandler;
 import org.springframework.stereotype.Component;
 
@@ -14,7 +15,7 @@ public class UserProjection {
         //Ideally Get the details from the DB
         CardDetails cardDetails
                 = CardDetails.builder()
-                .name("Shabbir Dawoodi")
+                .name("Ramesh Reddy")
                 .validUntilYear(2022)
                 .validUntilMonth(01)
                 .cardNumber("123456789")
@@ -23,8 +24,8 @@ public class UserProjection {
 
         return User.builder()
                 .userId(query.getUserId())
-                .firstName("Shabbir")
-                .lastName("Dawoodi")
+                .firstName("Ramesh")
+                .lastName("Reddy")
                 .cardDetails(cardDetails)
                 .build();
     }

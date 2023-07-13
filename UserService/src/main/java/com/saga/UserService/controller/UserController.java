@@ -1,7 +1,8 @@
 package com.saga.UserService.controller;
 
-import com.dailycodebuffer.CommonService.model.User;
-import com.dailycodebuffer.CommonService.queries.GetUserPaymentDetailsQuery;
+import com.saga.CommonService.model.User;
+import com.saga.CommonService.queries.GetUserPaymentDetailsQuery;
+
 import org.axonframework.messaging.responsetypes.ResponseTypes;
 import org.axonframework.queryhandling.QueryGateway;
 import org.springframework.web.bind.annotation.GetMapping;
