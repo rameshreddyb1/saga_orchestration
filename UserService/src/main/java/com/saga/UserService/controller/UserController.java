@@ -1,4 +1,4 @@
-package com.dailycodebuffer.UserService.controller;
+package com.saga.UserService.controller;
 
 import com.dailycodebuffer.CommonService.model.User;
 import com.dailycodebuffer.CommonService.queries.GetUserPaymentDetailsQuery;

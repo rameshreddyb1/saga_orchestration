@@ -1,4 +1,4 @@
-package com.dailycodebuffer.UserService.projection;
+package com.saga.UserService.projection;
 
 import com.dailycodebuffer.CommonService.model.CardDetails;
 import com.dailycodebuffer.CommonService.model.User;
